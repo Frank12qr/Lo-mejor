@@ -14,6 +14,8 @@ body {
     padding: 30px 20px;
     border-radius: 25px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
 }
 
 .fecha {
@@ -118,9 +120,9 @@ video {
     font-size: 80px;
     font-weight: bold;
     letter-spacing: 8px;
-    color: rgba(17, 5, 9, 0.973);
+    color: rgba(255, 0, 80, 0.10);
     writing-mode: vertical-rl;
-    z-index: 0;
+    z-index: -1; /* Enviar al fondo */
 }
 
 .love-left {
@@ -130,6 +132,7 @@ video {
 .love-right {
     right: 20px;
     transform: translateY(-50%) rotate(180deg);
+}
 }
 
 .video-cancion {
