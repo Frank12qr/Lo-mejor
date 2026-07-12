@@ -1,9 +1,19 @@
+console.log("Script cargado correctamente");
+
 function mostrarVideo() {
     document.getElementById("videoContainer").style.display = "block";
 }
 
-function mostrarFoto() {
-    document.getElementById("fotoContainer").style.display = "block";
+function mostrarCancion() {
+    document.getElementById("cancionContainer").style.display = "block";
+}
+
+function mostrarVideoMolly() {
+    document.getElementById("videoMolly").style.display = "block";
+}
+
+function mostrarVideo2() {
+    document.getElementById("videopanchito").style.display = "block";
 }
 
 function crearCorazon() {
@@ -14,7 +24,7 @@ function crearCorazon() {
 
     corazon.innerHTML = "❤️";
 
-    // Solo salen de los lados
+    // Corazones solamente en los lados
     if (Math.random() < 0.5) {
         // lado izquierdo
         corazon.style.left = Math.random() * 15 + "%";
@@ -24,7 +34,9 @@ function crearCorazon() {
     }
 
     corazon.style.fontSize = Math.random() * 20 + 15 + "px";
-    corazon.style.animationDuration = Math.random() * 5 + 6 + "s";
+
+    corazon.style.animationDuration =
+        Math.random() * 5 + 6 + "s";
 
     contenedor.appendChild(corazon);
 
@@ -34,21 +46,3 @@ function crearCorazon() {
 }
 
 setInterval(crearCorazon, 350);
-
-function mostrarCancion() {
-    const seccion = document.getElementById("cancionContainer");
-    const video = document.getElementById("videoCancion");
-
-    seccion.style.display = "block";
-
-    video.play();
-}
-
-function mostrarCancion() {
-    let cancion = document.getElementById("cancionContainer");
-
-    cancion.style.display = "block";
-
-    let video = document.getElementById("videoCancion");
-    video.play();
-}
