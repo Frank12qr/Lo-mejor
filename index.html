@@ -10,44 +10,67 @@
 
     <div class="contenedor">
 
-        <h2>04/06/2026</h2>
+        <h2 class="fecha">04/06/2026</h2>
 
-        <img src="image.png" class="image">
+        <img src="image.jpeg" class="image" alt="Frank y Camila">
 
         <p class="mensaje">
-            De todas las personas que existen en el mundo, mi corazón te eligió a ti. Gracias por llegar a mi vida, por hacerme sonreír y por convertir los días más simples en los más especiales. Eres mi lugar favorito, mi tranquilidad y una de las mejores cosas que me han pasado. Te quiero muchísimo, hoy, mañana y siempre. ❤️
+            De todas las personas que existen en el mundo, mi corazón te eligió a ti.
+            Gracias por llegar a mi vida, por hacerme sonreír y por convertir los días
+            más simples en los más especiales. Eres mi lugar favorito, mi tranquilidad
+            y una de las mejores cosas que me han pasado. Te quiero muchísimo,
+            hoy, mañana y siempre. ❤️
         </p>
 
         <button onclick="mostrarVideo()">
-    Descubre algo mas ❤️
-</button>
+            Descubre algo más ❤️
+        </button>
 
-<div id="videoContainer">
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-    </video>
-</div>
+        <div id="videoContainer">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
 
-<button onclick="mostrarCancion()" class="boton">
-    Amo todo de ti ❤️
-</button>
-<div id="cancionContainer" class="video-cancion">
+        <button onclick="mostrarCancion()">
+            Amo todo de ti ❤️
+        </button>
 
-    <video id="videoCancion" controls>
-        <source src="camilita.mp4" type="video/mp4">
-    </video>
-</div>
-<button onclick="mostrarFoto()">
-    Nuestro mejor recuerdo 📸
-</button>
+        <div id="cancionContainer">
+            <video id="videoCancion" controls>
+                <source src="camilita.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
 
-<div id="fotoContainer">
-    <img src="molly.png" class="foto-sorpresa">
-</div>
-    <script src="script.js"></script>
+        <button onclick="mostrarVideoMolly()">
+             Nuestro mejor Recuerdo 🥺
+        </button>
+
+        <div id="videoMolly">
+            <video controls>
+                <source src="molly.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+
+        <button onclick="mostrarVideo2()">
+            Nuestro bebé 🦆
+        </button>
+
+        <div id="videopanchito">
+            <video controls>
+                <source src="panchito.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+
+    </div>
+
     <div class="corazones"></div>
 
-</div>
+    <script src="script.js"></script>
 
 </body>
 </html>
